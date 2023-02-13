@@ -1,0 +1,64 @@
+﻿<!doctype html>
+<html lang="he">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>מכרה הידע</title>
+    <link rel="icon" type="image/x-icon" href="photos/tulik_endAnim-30.png">
+    <meta name="description" content="name of game" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="names" />
+
+    <!-- CSS -->
+
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+    
+    <!--jQuery library-->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <!--הקוד שמפעיל את תפריט הניווט-->
+    <script src="jScripts/myScript.js"></script>
+
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <!--קישור לדף עצמו כדי להתחיל את המשחק מחדש בלחיצה על הלוגו-->
+            <a href="indextest.html">
+                <img id="logo" src="photos/new_logo.png"/> <!--הלוגו של המשחק שלכם-->
+            </a>
+            <!--תפריט הניווט בראש העמוד-->
+            <nav>
+                <ul>
+                    <li><a class="about">אודות</a></li>
+                    <li><a class="howToPlay">איך משחקים?</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="aboutDiv" class="popUp bounceInDown hide" style="background-image: url(photos/yallah_klaf.png)">
+            <a class="closeAbout">X</a>
+            <h1>מכרה הידע</h1>
+            <h2>אפיון ופיתוח:</h2>
+            <p>נועה שאולוף | מאי תרזי | נטע לפין</p>
+            <h2>אופיין ופותח במסגרת פרויקט בקורסים:</h2>
+            <p>סביבות לימוד אינטראקטיביות 1 + תכנות אינטראקטיבי 1</p>
+            <p>תשפ"ג</p>
+            <img id="hitPhoto" alt="HIT" src="photos/hit_logo.png"/>
+            <br>
+            <a href="https://www.hit.ac.il/">הפקולטה לטכנולוגיות למידה</a>
+        </div>
+        <div id="howToPlayDiv" class="popUp bounceInDown hide" style="background-image: url(photos/yallah_klaf.png)" >
+            <a class="closeHowToPlay">X</a>
+            <p>ברגע שהפנס יאיר על התשובה אותה תרצו לאסוף, יש ללחוץ על מקש הרווח</p>
+        </div>
+
+        <div id="gameArea" class="">
+            <!--src = הקישור של דף המשחק שלכם -->
+            <iframe id="gameIframe" src="https://noahit22.github.io/goldMinerProject/" frameBorder="0" allowfullscreen="">Browser not compatible.</iframe>
+        </div>
+    </div>
+</body>
+
+</html>
